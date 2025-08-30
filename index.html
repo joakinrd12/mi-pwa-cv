@@ -59,7 +59,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-8 col-sm-10">
                 <div class="profile-container">
-                    <!-- Espacio para tu foto. Reemplaza la URL_DE_TU_FOTO_AQUI -->
+                    <!-- Ruta de la foto corregida -->
                     <img src="foto cv pwa.jpeg" class="profile-photo" alt="Foto de Perfil">
                     
                     <h2 class="mt-3">Joaquin Ruiz diaz</h2>
@@ -67,7 +67,7 @@
                     
                     <hr>
 
-                    <h3>45409737</h3>
+                    <h3>Mi Documento</h3>
                     <p>
                         Te invito a explorar mi perfil profesional y mi trayectoria. Este documento incluye información sobre mi formación académica, mi experiencia laboral como operario metalúrgico y las habilidades técnicas que he desarrollado a lo largo de mi carrera.
                     </p>
@@ -76,9 +76,9 @@
                         Para obtener un resumen completo de mis logros y competencias, puedes descargar mi currículum vitae en formato PDF. Estoy a tu disposición para cualquier consulta.
                     </p>
                     
-                    <!-- Botón para descargar o ver el documento -->
+                    <!-- Botón para descargar el documento. Asegúrate de que el nombre del archivo coincida exactamente. -->
                     <a href="cv en word.docx" class="document-link" download>
-                        currículum vitae
+                        Descargar CV
                     </a>
                 </div>
             </div>
@@ -92,7 +92,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js')
+                navigator.serviceWorker.register('service-worker.js')
                     .then(registration => {
                         console.log('Service Worker registrado con éxito:', registration);
                     })
